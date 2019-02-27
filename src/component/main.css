@@ -1,0 +1,242 @@
+
+.mid-left{
+    float: left;
+}
+.mid-right{
+    float: right;
+    width: 30px;
+    height: 20px;
+}
+.img-lower{
+    background-color:#323232;
+    max-width: 100%;
+    height: 220px;
+    text-align: center;
+   
+}
+.img-lower h1{
+    color: white;
+    text-align: center;
+    /* font-size: 15px; */
+    font-weight: 500
+}
+.img-lower h2{
+    color: white;
+    text-align: center;
+    /* font-size: px; */
+    font-size: 22px;
+    font-weight: 400
+}
+.img-lower button{
+    background-color: #fff;
+    text-align: center;
+    margin-right: 4px;
+    width: 200px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.far{
+    color: #0c9fce;
+    size: 40px;
+    font: bold;
+}
+.img-container{
+    /* margin-top: 4vh;
+    background-position: center;
+    /* opacity: 0.9; */
+    /* filter: brightness(50%); */
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 700px; */ 
+    background-image: url('./images/m1.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: 850px;
+
+}
+/* .img-container {
+    filter: brightness(100%);
+    font-size: 50px;
+    color: white;
+    margin-left: 8vh;
+    padding-top: 3vh;    
+    float: left;
+} */
+.img-container span{
+    padding-top: 4px;
+    font-size: 30px;
+    color: white;
+    font-weight: 300;
+}
+.mid-head{
+    margin-left: 2vh;
+}
+.mid-img{
+    padding-left: 6vh;
+}
+.headerset{
+    padding-top: 250px;
+    box-sizing: border-box
+}
+.upperh1{
+    filter: brightness(100%);
+    font-size: 50px;
+    color: white;
+    margin-left: 8vh;
+    padding-top: 3vh;    
+    float: left;
+}
+ul{
+    list-style-type: none;
+    margin-left: 4vh;
+}
+li{
+    color: white;
+    font-size: 20px;
+}
+.fas{
+    color: #0c9fce;
+
+}
+.lower-btn{
+    background-color: #0c9fce;
+    margin-top: 70vh; 
+    height: 40px;
+    border: 1px solid #0c9fce;
+    color: white
+    /* width: 100px; */
+    
+}
+.inner-form{
+    float: right;
+    margin-top: 5vh;
+    margin-right: 5vh;
+    width: 350px;
+    height: 390px;
+    border: 1px solid white; 
+    border-radius: 9px;
+    background-color: black;
+}
+.inner-form form{
+    padding-top: 15vh;
+    margin-left: 3vh;
+   
+}
+.name{
+    padding-left: 10px;
+     height: 40px;
+    width: 200px;
+} 
+.email{
+    padding-left: 10px;
+     height: 40px;
+     width: 200px;
+     margin-top: 1vh;
+    }
+.select{
+    margin-top: 1vh;
+    height: 40px;
+}
+.left-head{
+    float: left;
+}
+.form-btn{
+    background-color: #0c9fce;
+    border-radius: 10px;
+    border-color: #0c9fce;
+    color: white;
+    cursor: pointer;
+}
+.select-inp{
+    height: 40px;
+    width: 160px;
+}
+.nav-bar{
+    /* background-color: aqua; */
+    /* height: 20000px; */
+    padding-top: 6vh;
+    margin-left: 12vh;
+    /* position: sticky; */
+    top: 0;
+    /* float: left; */
+}
+.nav-container{
+    height: 100px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
+
+.contact{
+    padding: 1vh;
+    padding-top: 2vh;
+    color: black;
+    font-size: 18px;
+}
+.home{
+    color: black;
+    padding: 1vh;
+    font-size: 18px;
+
+}
+.choose{
+    color: black;
+    font-size: 18px;
+    padding: 1vh;
+    /* text-underline-position: unset */
+}
+.about{
+    color: black;
+    font-size: 18px;
+    padding: 1vh;
+}
+
+.btn{
+    /* padding-top: vh; */
+    font-size: 22px;
+    background-color: #0c9fce;
+    border-radius: 10px;
+    border-color: #0c9fce;
+    color: white;
+    cursor: pointer;
+    text-align: center
+}
+.btn:hover{
+    color: #0c9fce;
+    background-color:  white;
+}
+
+.sec-section{
+    background-color: #333
+}
+.chat{
+    color: white;
+    text-align: center
+}
+.header .banner .btn-blue {
+    margin: 34px 0px 42px 0px;
+}
+.banner-bottom{
+    padding: 35px 0px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #333;
+    color:  white
+}
+
+.about{
+    padding:   25px 0px
+}
+
+.service-section p {
+    margin-bottom: 0;
+    color: #7a7a8c
+}
+
+.upper-chat{
+    margin-right: 2vh
+}
