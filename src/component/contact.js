@@ -1,13 +1,13 @@
 import React, {Component} from 'react'
 import {Redirect} from 'react-router-dom'
 import './main.css'
-import logo from './images/logo.png'
-import mb1 from './images/bm1.jpg'
-import mb2 from './images/bm2.jpg'
-import mb3 from './images/bm3.jpg'
-import man from './images/man.jpeg' 
-import cont from './images/cont.jpg' 
-import blb from './images/blb.gif' 
+import logo from './images/logo.png'; import mb1 from './images/bm1.jpg'
+import mb2 from './images/bm2.jpg'; import mb3 from './images/bm3.jpg'
+import man from './images/man.jpeg'; import cont from './images/cont.jpg' 
+import blb from './images/blb.gif'; import stat from './images/stat.png' 
+import mat from './images/mat.png'; import px from './images/px.jpg' 
+import pss from './images/pss.png'; import mtab from './images/mtab.png' 
+import pm from './images/pm.png'
 
 class Contact extends Component{
     constructor(props){
@@ -75,7 +75,7 @@ logouthandler = () => {
                  <li class="active nav-item"> <a class='nav-link' href="#">Home</a></li>
                  <li class="active nav-item"> <a class='nav-link' href="#about">About</a></li>
                  <li class="active nav-item"> <a class='nav-link' href="#contact">Contact</a></li>
-                 <li class="active nav-item"> <a class='nav-link' href="#">Why Choose us</a></li>
+                 <li class="active nav-item"> <a class='nav-link' href="#why-us">Why Choose us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right " >        
                  <button class="btn btn-outline-success my-2 my-sm-0 text-right" type="button"   onClick={this.logouthandler}  > <i class="far fa-comments"></i> LOGOUT</button>
@@ -192,7 +192,7 @@ logouthandler = () => {
                     </div>
                     <div class='col-md-6 border-right' >
                         <span class='fa fa-flask'style={{color: 'green'}}> </span>
-                        <p> Phd Qualified Uk Editor  </p>
+                        <p  class='pitem'> Phd Qualified Uk Editor  </p>
                     </div>
                     <div class='col-md-6' >
                         <span class='fa fa-font'style={{color: 'green'}} >  </span>
@@ -200,15 +200,15 @@ logouthandler = () => {
                     </div>
                     <div class='col-md-6 border-right' >
                         <span class='fa fa-file'  style={{color: 'green'}}> </span>
-                        <p> Safe & Secure Payment Method  </p> 
+                        <p class='pitem'> Safe & Secure Payment Method  </p> 
                     </div>
                     <div class='col-md-6' >
                         <span class='fa fa-eye' style={{color: 'green'}}>  </span>
                         <p class='pitem' >  Adhere to Standard Practices </p>
                     </div>
                     <div class='col-md-6 border-right' >
-                        <span class='fa fa-magice' style={{color: 'green'}} >  </span>
-                        <p>  Affordable Service Guaranteed </p> 
+                        <span class='fa fa-magic' style={{color: 'green'}} >  </span>
+                        <p class='pitem' >  &nbsp    Affordable Service Guaranteed </p> 
                     </div>
                     <div class='col-md-6' >
                         <span class='fa fa-file'style={{color: 'green'}} >  </span>
@@ -216,7 +216,7 @@ logouthandler = () => {
                     </div>
                     <div class='col-md-6 border-right' >
                         <span class='fa fa-support' style={{color: 'green'}} > </span>
-                        <p>24x7 Priority Support Desk </p> 
+                        <p  class='pitem'>24x7 Priority Support Desk </p> 
                     </div>
                     </div>
                 </div>
@@ -248,6 +248,215 @@ logouthandler = () => {
                     <a class='button-c'><i class='fa fa-comments-o'> </i> Consult Now  </a>
                 </div>
             </section>
+
+                {/* Section Ended */}
+
+            <section class='statistics-section'>
+                <div class='container'>
+                <div class='col-sm-8' >
+                <h1 class="heading">Assisstance by the Data Analysis Software of your choice.</h1>
+                <p>
+                For your assistance, we can use any data analysis software of your choice for your project. Usually, the majority of my clients asks for (SPSS/PASW, SAS, MINITAB, STATA, NVivo, SmartPLS, EViews, MATLAB, S-Plus, LISREL, and AMOS). I can also help you out with different software packages irrespective of the above, so you may ask for any other specific software package to use for your assistance.
+                </p>
+                <div class='brand-logo' >
+                    <img src={mtab} />
+                    <img src={stat} />
+                    <img src={pss} />
+                    <img src={mat} />
+                </div>
+                <div class='col-sm-4' >
+                    <img src={px} />
+                </div>
+                </div>
+                </div>
+            </section>
+
+            {/* Section Starting **Why Choose us*** -----------!!!!!!!!!! */}
+
+            <section class='service-section bg-black' id="why-us" >
+                <div class='container' >
+                    <h1 class="heading text-center">Why choose our services</h1>
+                    <p class='para' >
+                        We strictly adhere to Standard Practices and we ensure to provide good quality work. Our Experts choose the methods that are simple yet attractive &amp; informative. We have proved ourselves to clients all over the world and students from all academic levels. Let us help you succeeded with flying colors.   
+                    </p>
+                    <div class='col-md-4' >
+                        <span class='icon-1' style={{backgroundPosition: '-5px -1px'}} >  </span>
+                        <p class="pitem">Accounting &amp; Finance</p>
+                    </div>
+                    <div class='col-md-4' >
+                        <span class='icon-1' style={{backgroundPosition: '-60px -1px'}} >  </span>
+                        <p class="pitem">Earth &amp; Marine Sciences</p>                    
+                    </div>
+                    <div class='col-md-4  border-right' >
+                        <span class='icon-1' style={{backgroundPosition: '-121px -1px'}} >  </span>
+                        <p class="pitem"> Literature & Creative Drafting </p>             
+                    </div>
+                    <div class='col-md-4 ' >
+                        <span class='icon-1' style={{backgroundPosition: '-2px -46px'}} >  </span>
+                        <p class="pitem">  Archaeology</p>   
+                    </div>
+                    <div class='col-md-4 ' >
+                        <span class='icon-1' style={{backgroundPosition: '-60px -46px'}} >  </span>
+                        <p class="pitem">  Economics</p>   
+                    </div>
+                    <div class='col-md-4  border-right' >
+                        <span class='icon-1' style={{backgroundPosition: '-121px -46px'}} >  </span>
+                        <p class="pitem"> Marketing & Advertising </p>             
+                    </div>
+                    <div class='col-md-4 ' >
+                        <span class='icon-1' style={{backgroundPosition: '-2px -89px'}} >  </span>
+                        <p class="pitem">  Art & Design </p>   
+                    </div>
+                    <div class='col-md-4 ' >
+                        <span class='icon-1' style={{backgroundPosition: '-60px -89px'}} >  </span>
+                        <p class="pitem">  Environmental </p>   
+                    </div>
+                    <div class='col-md-4  border-right' >
+                        <span class='icon-1' style={{backgroundPosition: '-121px -89px'}} >  </span>
+                        <p class="pitem"> Media Studies  & Publishing </p>             
+                    </div>
+                    <div class='col-md-4  border-bottom' >
+                        <span class='icon-1' style={{backgroundPosition: '-5px -134px'}} >  </span>
+                        <p class="pitem"> Biological Science </p>             
+                    </div>
+                    <div class='col-md-4  border-bottom' >
+                        <span class='icon-1' style={{backgroundPosition: '-60px -134px'}} >  </span>
+                        <p class="pitem"> Health Science </p>             
+                    </div>
+                    <div class='col-md-4  border-bottom border-right' >
+                        <span class='icon-1' style={{backgroundPosition: '-121px -134px'}} >  </span>
+                        <p class="pitem"> Medicine Surgery </p>             
+                    </div>
+                    <div class='col-md-4  border-bottom' >
+                        <span class='icon-1' style={{backgroundPosition: '-2px -179px'}} >  </span>
+                        <p class="pitem"> Bussines & Management </p>             
+                    </div>
+                    <div class='col-md-4  border-bottom' >
+                        <span class='icon-1' style={{backgroundPosition: '-63px -179px'}} >  </span>
+                        <p class="pitem"> History </p>             
+                    </div>
+                    <div class='col-md-4  border-bottom border-right' >
+                        <span class='icon-1' style={{backgroundPosition: '-121px -179px'}} >  </span>
+                        <p class="pitem"> Pharmacy & Pharmalogy </p>             
+                    </div>
+                    <div class='col-md-4  border-bottom' >
+                        <span class='icon-1' style={{backgroundPosition: '-2px -222px'}} >  </span>
+                        <p class="pitem"> Chemistry </p>             
+                    </div>
+                    <div class='col-md-4  border-bottom' >
+                        <span class='icon-1' style={{backgroundPosition: '-60px -222px'}} >  </span>
+                        <p class="pitem"> Law legal </p>             
+                    </div>
+                    <div class='col-md-4  border-bottom border-right' >
+                        <span class='icon-1' style={{backgroundPosition: '-121px -222px'}} >  </span>
+                        <p class="pitem"> Philosphy </p>             
+                    </div>
+                    <div class='col-md-4  border-bottom' >
+                        <span class='icon-1' style={{backgroundPosition: '-2px -263px'}} >  </span>
+                        <p class="pitem"> Computer Sciences &  It </p>             
+                    </div>
+                    <div class='col-md-4  border-bottom' >
+                        <span class='icon-1' style={{backgroundPosition: '-60px -263px'}} >  </span>
+                        <p class="pitem"> life Science & Technology </p>             
+                    </div>
+                    <div class='col-md-4  border-bottom border-rights' >
+                        <span class='icon-1' style={{backgroundPosition: '-121px -263px'}} >  </span>
+                        <p class="pitem"> political Science </p>             
+                    </div>
+                </div>
+            </section>
+
+            {/* !----------****Payment Method Section*** ---------!!!!! */}
+
+            <section class='payment-method-section' >
+                <div>
+                    <div class='container' >
+                        <div col-sm-3 >
+                            <img src={pm} />
+                        </div>
+                        <div class='col-sm-9' >
+                            <h1 class='heading'> Your Data Is safe with us </h1>
+                            <p>
+                            You can entrust your data with us without worrying about it since we are a team of professionals who are well aware of the importance of data in Research work. 
+                            Your data is secure with us. Data will not be shared with a 3rd party whatsoever. We will not disclose our contributions in your work and grant all the exclusive rights.           
+                            </p>
+                            <div class='col-sm-12 text-center' >
+                                <a class='button-c' > <i class='fa fa-comments-o' ></i> Chat Now </a>
+                                <a class='button-c' > <i class='fa fa-facebook-messenger' ></i> MESSAGE US </a>
+                            </div>                            
+                            <div class='col4' >
+                                <div class='container' >
+                                    <div class='col-md-4 col4-outers' >
+                                        <div class='col4-border' >
+                                            <img src={mb1} />
+                                            <h4>100% Satisfaction Guaranteed</h4>
+                                        </div>
+                                        <div class='palign' >
+                                            <div class='money-back-png' ></div>
+                                                Money Back Gurranty
+                                            
+                                        </div>
+                                        <div class='palign' >
+                                            <div class='paper-png' > </div>
+                                            Non-Plagiarized Sample Work   
+                                       </div>
+                                        <div class='palign' >
+                                            <div class='deadline-png' ></div>
+                                            Prioritize as per the Dead-Line
+                                       </div>
+                                    </div>
+                                    <div class='col-md-4 col4-outers' >
+                                        <div class='col4-border' >
+                                            <img src={mb2} />
+                                            <h4> MAINTAIN 100% CONFIDENTIALITY </h4>
+                                        </div>
+                                        <div class='palign' >
+                                            <div class='Shield-png' ></div>
+                                            Safe & Secure
+                                        </div>
+                                        <div class='palign' >
+                                            <div class='protection-png' > </div>
+                                            Client Privacy Assured   
+                                       </div>
+                                        <div class='palign' >
+                                            <div class='checklist-png' ></div>
+                                            Strict Adherence to Legit Practices
+                                       </div>
+                                    </div>
+
+                                    <div class='col-md-4 col4-outers' >
+                                        <div class='col4-border' >
+                                            <img src={mb3} />
+                                            <h4> TOP QUALITY SERVICES </h4>
+                                        </div>
+                                        <div class='palign' >
+                                            <div class='support-png' ></div>
+                                            Priority Customer Support
+                                        </div>
+                                        <div class='palign' >
+                                            <div class='file-png' > </div>
+                                            Priority Customer Support                                       </div>
+                                        <div class='palign' >
+                                            <div class='dollar-png' ></div>
+                                            Quality Services In Low Price
+                                       </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* !-------------** Contact Us Section ***-----------------!!!!!!!! */}
+
+            <section class='contact bg-contact' id='contact' >
+                <div class='container' id='#mysocial-section' >
+                    <div class='col-md-8 contact-left' >
+
+                    </div>
+                </div>
+            </section>
             </main>
 
 
@@ -277,21 +486,7 @@ logouthandler = () => {
             {/* // end middle */}
 
 
-            <section class='row'  id='contact' >  
-                <div class='col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto'> 
-                    <div class='card'>
-                        <img src={mb1} class='card-img img-fluid'/>
-                        <div class='card-body' >
-                            <h2 class='card-title'> 100% SATISFACTION GUARANTEED  </h2>
-                            <p class='card-text'> Money-Back Guaranteed  </p>
-                            <p class='card-text'>  Non-Plagiarized Sample Work  </p>
-                            <p class='card-text'>  Prioritize as per the Dead-Line  </p>
-                        </div>
-                    </div>
-                    
-                </div>
-
-            </section>
+           
         </div>
         
         )
