@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {Redirect} from 'react-router-dom'
 import './main.css'
+import logo from './images/logo.png'
 import mb1 from './images/bm1.jpg'
 import mb2 from './images/bm2.jpg'
 import mb3 from './images/bm3.jpg'
@@ -59,26 +60,21 @@ logouthandler = () => {
         }
         return (
             <div> 
-           <nav class="navbar   navbar-default nav-fixed  bg-light navbar-expand-md">
+           <nav class="navbar  navbar-default nav-fixed  bg-light navbar-expand-md"  >
                  <div class="container">
                    <div class="navbar-header ml-auto">
-                        <a class="navbar-brand" href="#"></a>
+                        <a class="navbar-brand" href="#"> <img src={logo} width='110px' height='59px' /> </a>
                    </div>
 
-                 <button class='navbar-toggler' type='button' data-toggle='collapse'
-                 data-target='#collapsenavbar' aria-expended='true' >   
-                        <span class='sr-only'> ...</span>
-                        <span class='icon-bar'>  </span>
-                        <span class='icon-bar'>  </span>
-                        <span class='icon-bar'>  </span>
-                        <span class='icon-bar'>  </span>
-                 </button>
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                </button>
 
-                 <div class='navbar-collapse in collapse text-center' aria-expanded='false' id='collapsenavbar' >  
+                 <div class='navbar-collapse in collapse text-center' aria-expanded='false' id='navbarSupportedContent' >  
                  <ul class="nav navbar-nav ml-auto ">
                  <li class="active nav-item"> <a class='nav-link' href="#">Home</a></li>
                  <li class="active nav-item"> <a class='nav-link' href="#about">About</a></li>
-                 <li class="active nav-item"> <a class='nav-link' href="#">Contact</a></li>
+                 <li class="active nav-item"> <a class='nav-link' href="#contact">Contact</a></li>
                  <li class="active nav-item"> <a class='nav-link' href="#">Why Choose us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right " >        
@@ -94,7 +90,7 @@ logouthandler = () => {
         
         {/* !!!!!!----------navbar section end----!!!!!!!!!!!!!!!!! */}
 
-            <section class='header sec-section' > 
+            <section class='header sec-section' style={{marginTop: '0px;'}} > 
                 <div className='img-container'>
     
             <div class='container col-md-8 banner ' >
@@ -111,7 +107,7 @@ logouthandler = () => {
                      <li><i class="fas fa-hand-point-right"></i>Reliable & Genuine. </li>
                  </ul>
                  <div class='btn btn-blue text-center' >
-                 <a class='btn btn-lg text-center' ><i class="far fa-comments-o"></i>     LIVE CHAT </a>
+                 <a class='btn btn-lg text-center' ><i class="far fa-comments-o"></i> CHAT nOW </a>
                  </div>
                 </div>
                 <div class='col-md-4 right-side-form'>
@@ -132,7 +128,7 @@ logouthandler = () => {
                             <option value='pak' > +92 </option>
                         </select> <input className='select-inp' /> <br/> <br/>
                     </div>
-                    <a class='btn btn-lg' ><i class="far fa-comments-o"></i>     LIVE CHAT </a>
+                    <a class='btn btn-lg far fa-comments-o ' > GET IT NOW! </a>
                             <p> {this.state.error} </p>
                     </form>
                 </div>
@@ -176,13 +172,14 @@ logouthandler = () => {
                 <div class='container' >
 
                     <h1 class='text-center' style={{textAlign: 'center'}} > TAKING STRESS OVER ACADEMIC PROJECTS IS NOT A SOLUTION. TRY CONTACTING US, WE CAN MAKE IT WORK. </h1><br/>
-                    <div class='col-md-2 col-sm-2' style={{textAlign: 'center', border: '1px solid black'}}>
-                        <img height='195' width='145' src={cont} style={{margin: '0px auto'}} />
-                        <div class='btn-bluec' style={{ width: 'fit-content', height: 'fit-content' }} >
-                        <a class=' far fa-comments-o' style={{borderRadius: '5px', marginBottom: '4px'}} > CHAT NOW </a>
+                    <div class='col-sm-3 ' style={{textAlign: 'center', border: '1px solid black'}} >
+                        <img height='220' width='255' src={cont} style={{margin: '0px auto'}} />
+                        <div class='btn-bluec'  >
+                        <br/>
+                        <a class='button-c ' style={{borderRadius: '5px', }}> <i class='fa fa-comments-o '></i> CHAT NOW </a>
                         </div>
                     </div>
-                <div clas='col-md-10 col-sm-10'> 
+                <div clas='col-sm-9 '> 
 
                 <div style={{border: '1px solid black'}}> 
 
@@ -231,20 +228,24 @@ logouthandler = () => {
 
             <section class='get-started' >
                 <div class='container' >
-                    <div class='col-sm-3 col-lg-3 no-padding' > 
+                    <div class='col-sm-6  no-padding' > 
                     <img src={blb}/>
                     </div>
-                    <div class='col-sm-9 col-lg-9'>
+                    <div class='col-sm-6' >
                         <h1> HOW TO GET STARTED? </h1>
                         <h4> THE PROCEDURE IS VERY SIMPLE. JUST FOLLOW THE STEPS BELOW: </h4>
-                        <ul>
-                            <li class='first'> Fill out the 
-                            <a href='#signup'> Sign-up Form  </a> </li>
-                            <li > Or <a href='#signup'> Live Chat </a>  directly with our Expert Consultants for detailed academic guidance. We are available online 24/7. 
+                        <ul >
+                            <li class='first' style={{color:'black'}}  > Fill out the 
+                            <a href='#signup'> Sign-up Form  </a>
                              </li>
-                             <li class='last'>That’s it! Now we’ll take care of the rest for you.  </li>
+                            <li style={{color:'black'}}  > Or <a href='#signup'> Live Chat </a>  directly with our Expert Consultants for detailed academic guidance. We are available online 24/7. 
+                             </li>
+                             <li style={{color: 'black'}}  class='last'>That’s it! Now we’ll take care of the rest for you.  </li>
                         </ul>
                     </div>
+                </div>
+                <div class='col-lg-12 col col-md-12 col-sm-12 text-center' >
+                    <a class='button-c'><i class='fa fa-comments-o'> </i> Consult Now  </a>
                 </div>
             </section>
             </main>
@@ -266,7 +267,7 @@ logouthandler = () => {
 
 
 
-                <br/>
+                <br/><br/>
             <div class='row ' >
                 <div class='middle col-lg-7  col-md-2 col-sm-2 col-10 m-auto mid-head'>
                 </div>
@@ -276,7 +277,7 @@ logouthandler = () => {
             {/* // end middle */}
 
 
-            <section class='row' >  
+            <section class='row'  id='contact' >  
                 <div class='col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto'> 
                     <div class='card'>
                         <img src={mb1} class='card-img img-fluid'/>
