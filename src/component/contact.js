@@ -60,6 +60,7 @@ logouthandler = () => {
         }
         return (
             <div> 
+<<<<<<< HEAD
            <nav class="navbar nav-fix navbar-default "  >
                  <div class="container-fluid">
                    <div class="navbar-header log">
@@ -72,6 +73,16 @@ logouthandler = () => {
 	                <span class="icon-bar"></span>
 	                <span class="icon-bar"></span>
 	                <span class="icon-bar"></span>
+=======
+           <nav class="navbar  navbar-default nav-fixed  bg-light navbar-expand-md"  >
+                 <div class="container">
+                   <div class="navbar-header ml-auto">
+                        <a class="navbar-brand" href="#"> <img src={logo} width='110px' height='59px' /> </a>
+                   </div>
+
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+>>>>>>> c1da81c0b8a0f9a2732d83748d6ba47a202d2996
                 </button>
 
                  <div class='navbar-collapse in collapse text-center' aria-expanded='false' id='navbarSupportedContent' >  
@@ -114,6 +125,7 @@ logouthandler = () => {
                  <a class='btn btn-lg text-center' ><i class="far fa-comments-o"></i> CHAT nOW </a>
                  </div>
                 </div>
+<<<<<<< HEAD
                 <div class="col-md-4 right-side-form">
             <form >
                   <div class="form-group">
@@ -126,6 +138,30 @@ logouthandler = () => {
                   
                  </form>
                    </div>
+=======
+                <div class='col-md-4 right-side-form'>
+                    <form onSubmit={this.onsubmit} >
+                    <div class='form-group' > 
+                        <input className='name' placeholder='Full Name'
+                        value={this.state.name} cass
+                        onChange={(e)=> this.setState({ name: e.target.value }) }
+                         />
+                    </div>
+                    <div class='form-group' > 
+                        <input className='email' placeholder='Email'
+                        value={this.state.email}  class
+                        onChange={ (e)=> this.setState({ email: e.target.value}) } /><br/>
+                    </div>
+                    <div class='form-group' > 
+                        <select className='select' >
+                            <option value='pak' > +92 </option>
+                        </select> <input className='select-inp' /> <br/> <br/>
+                    </div>
+                    <a class='btn btn-lg far fa-comments-o ' > GET IT NOW! </a>
+                            <p> {this.state.error} </p>
+                    </form>
+                </div>
+>>>>>>> c1da81c0b8a0f9a2732d83748d6ba47a202d2996
             </div>
             </section>  
 
@@ -444,6 +480,7 @@ logouthandler = () => {
 
             {/* !-------------** Contact Us Section ***-----------------!!!!!!!! */}
 
+<<<<<<< HEAD
             
     <section class="contact bg-contact" id="contact">
         <div class="container"   id="#mysocial-section">
@@ -527,6 +564,18 @@ logouthandler = () => {
     
 </div>
 </section>
+=======
+            <section class='contact bg-contact' id='contact' >
+                <div class='container' id='#mysocial-section' >
+                    <div class='col-md-8 contact-left' >
+
+                    </div>
+                </div>
+            </section>
+            </main>
+
+
+>>>>>>> c1da81c0b8a0f9a2732d83748d6ba47a202d2996
 
 
 
