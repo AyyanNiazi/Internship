@@ -6,6 +6,8 @@ import Home from './home'
 import About from './about'
 import Contact from './contact'
 import Congrats from './congrats'
+import MainHome from './mainHome'
+
 class Routes extends React.Component {
     constructor(props) {
         super(props);
@@ -20,6 +22,7 @@ class Routes extends React.Component {
                     <Route path='/about' component={About} />
                     <Route path='/home' component={Home} />
                     <Route path='/contact' component={Contact} />
+                    <Route path='/main' component={MainHome} />
                     <Route path='/congrats' component={Congrats} />
                     <Route path='/signup' component={Signup} />
                     </Switch>
